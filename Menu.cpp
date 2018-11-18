@@ -77,12 +77,12 @@ void Menu::TerminalColour()
 }
 void Menu::AudioNcolour()
 {
-	mciSendString("open \"C:\\MEE\\MUSIC\\EDITEDSpace Gun Sound Effect.mp3\" type mpegvideo alias shooting_sound", NULL, 0, NULL);
-	mciSendString("open \"C:\\MEE\\MUSIC\\Space Invaders OST - Pluto.mp3\" type mpegvideo alias intro1_sound", NULL, 0, NULL);
-	mciSendString("open \"C:\\MEE\\MUSIC\\Space Invaders OST - Neptune.mp3\" type mpegvideo alias intro2_sound", NULL, 0, NULL);
-	mciSendString("open \"C:\\MEE\\MUSIC\\Metal Gear Solid - Snake death scream sound effect.mp3\" type mpegvideo alias b_death_sound", NULL, 0, NULL);
-	mciSendString("open \"C:\\MEE\\MUSIC\\SOUND EFFECT Solid Snake ! Metal Gear Solid HQ.mp3\" type mpegvideo alias life_lost_sound", NULL, 0, NULL);
-	mciSendString("open \"C:\\MEE\\MUSIC\\DUN-DUN-DUUUUN!!! - Sound Effect.mp3\" type mpegvideo alias final_sound", NULL, 0, NULL);
+	mciSendString("open \"C:\\\" type mpegvideo alias shooting_sound", NULL, 0, NULL);
+	mciSendString("open \"C:\\\" type mpegvideo alias intro1_sound", NULL, 0, NULL);
+	mciSendString("open \"C:\\\" type mpegvideo alias intro2_sound", NULL, 0, NULL);
+	mciSendString("open \"C:\\\" type mpegvideo alias b_death_sound", NULL, 0, NULL);
+	mciSendString("open \"C:\\\" type mpegvideo alias life_lost_sound", NULL, 0, NULL);
+	mciSendString("open \"C:\\\" type mpegvideo alias final_sound", NULL, 0, NULL);
 
 	init_pair(C_MONSTER, COLOR_GREEN, COLOR_BLACK);
 	init_pair(C_MONSTER_FIRE, COLOR_GREEN, COLOR_BLACK);
