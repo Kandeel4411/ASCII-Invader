@@ -43,4 +43,5 @@ PDCurses
    * Tap `A` or `D` to move left or right or double tap to jump by a level-restrained boost 
    * Tap `Space` to shoot
    * There is 5 levels in the game, each with certain number of invaders you need to kill. Boss rounds start above level 2
-
+* Demo:
+   ![Space Invader Demo](./assets/bandicam20190513224927716.gif)
