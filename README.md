@@ -1,4 +1,6 @@
 # Space-Invader
-My space invader mini-project source code
-C++ console based game using PDCurses
-still missing menus and stuff
+My incomplete version of the [Space Invader](https://en.wikipedia.org/wiki/Space_Invaders) game.
+## OS
+Windows only.
+## Dependencies
+PDCurses
