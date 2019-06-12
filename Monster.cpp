@@ -10,10 +10,10 @@
 #include <iostream>
 #include <random>
 #include <thread>   
-#include <time.h>
+#include <ctime>
 #include <vector>
 
-bool Monster::turn = 0;
+bool Monster::turn = false;
 
 void Monster::MonsterMove(const std::vector<Monster>::iterator first, const std::vector<Monster>::iterator last)
 {

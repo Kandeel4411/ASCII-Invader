@@ -6,7 +6,7 @@
 #include <iostream>
 #include <random>
 #include <thread>   
-#include <time.h>
+#include <ctime>
 #include <vector>
 
 static int RandInt(int low, int high)

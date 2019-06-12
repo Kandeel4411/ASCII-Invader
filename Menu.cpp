@@ -10,7 +10,7 @@
 #include <iostream>
 #include <random>
 #include <thread>   
-#include <time.h>
+#include <ctime>
 #include <vector>
 #pragma comment(lib, "Winmm.lib")
 
@@ -97,7 +97,7 @@ void Menu::AudioNcolour()
 	init_pair(C_SET_LIFE, COLOR_YELLOW, COLOR_BLACK);
 
 	init_pair(C_PLAYER_LIVE, COLOR_YELLOW, COLOR_BLACK);
-	init_pair(C_PlAYER_SCORE, COLOR_YELLOW, COLOR_BLACK);
+	init_pair(C_PLAYER_SCORE, COLOR_YELLOW, COLOR_BLACK);
 
 	init_pair(C_BORDER, COLOR_RED, COLOR_BLACK);
 

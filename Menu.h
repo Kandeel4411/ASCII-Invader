@@ -6,32 +6,32 @@
 #include <iostream>
 #include <random>
 #include <thread>   
-#include <time.h>
+#include <ctime>
 #include <vector>
 
 
 #ifndef C_MONSTER_FIRE
 
-#define C_MONSTER_FIRE 1
-#define C_MONSTER 4
+constexpr auto C_MONSTER_FIRE = 1;
+constexpr auto C_MONSTER = 4;
 
-#define C_PLAYER_FIRE 2
-#define C_PLAYER 5
+constexpr auto C_PLAYER_FIRE = 2;
+constexpr auto C_PLAYER = 5;
 
-#define C_BOSS_FIRE 3
-#define C_BOSS 6
+constexpr auto C_BOSS_FIRE = 3;
+constexpr auto C_BOSS = 6;
 
-#define C_INVADER_COUNT 7
-#define C_PLAYER_LIVE 8
+constexpr auto C_INVADER_COUNT = 7;
+constexpr auto C_PLAYER_LIVE = 8;
 
-#define C_PlAYER_SCORE 9
-#define C_SET_LIFE 10
+constexpr auto C_PLAYER_SCORE = 9;
+constexpr auto C_SET_LIFE = 10;
 
-#define C_BORDER 11
+constexpr auto C_BORDER = 11;
 
-#define C_STAR1 12
-#define C_STAR2 13
-#define C_STAR3 14
+constexpr auto C_STAR1 = 12;
+constexpr auto C_STAR2 = 13;
+constexpr auto C_STAR3 = 14;
 
 #define SLEEP_THREAD std::this_thread::sleep_for(std::chrono::milliseconds(30));
 #endif
@@ -74,7 +74,6 @@ public:
 	static int maxX, maxY;
 	static std::vector <Settings> settingsLevel;
 
-public:
 
 	static void MainMenu();
 		static void DisplayMenu();

@@ -6,7 +6,7 @@
 #include <random>
 
 #include <thread>   
-#include <time.h>
+#include <ctime>
 #include <vector>
 
 class Player

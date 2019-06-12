@@ -11,7 +11,7 @@
 #include <iostream>
 #include <random>
 #include <thread>   
-#include <time.h>
+#include <ctime>
 #include <vector>
 
 Player Player::player;

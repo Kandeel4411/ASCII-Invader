@@ -10,7 +10,7 @@
 #include <iostream>
 #include <random>
 #include <thread>   
-#include <time.h>
+#include <ctime>
 #include <vector>
 #pragma comment(lib, "Winmm.lib")
 
@@ -155,9 +155,9 @@ void Invader::DisplayWindow()
 	mvprintw( borderX - 2, 1, "LIVES : %d", Menu::settingsLevel[setLevel].life);
 	attroff(COLOR_PAIR(C_PLAYER_LIVE));
 
-	attron(COLOR_PAIR(C_PlAYER_SCORE));
+	attron(COLOR_PAIR(C_PLAYER_SCORE));
 	mvprintw( borderX - 1, 1, "SCORE : %d", Menu::settingsLevel[setLevel].score);
-	attroff(COLOR_PAIR(C_PlAYER_SCORE));
+	attroff(COLOR_PAIR(C_PLAYER_SCORE));
 
 	attron(COLOR_PAIR(C_SET_LIFE));
 	mvprintw( borderX    , 1 , "*** PRESS 'X' TO SPEND %d SCORE POINTS FOR A life *** ",Menu::settingsLevel[setLevel].setLifeScore);
@@ -221,27 +221,6 @@ void Invader::MovementLogic()
 }
 void Invader::CollisionLogic()
 {
-	std::sort(fireMonster.begin(),fireMonster.end(),
-		[](Fire const & a, Fire const & b) -> bool
-		{ 
-			return a.x < b.x;
-		});
-	std::sort(fireBoss.begin(), fireBoss.end(),
-		[](Fire const & a, Fire const & b) -> bool
-		{
-			return a.x < b.x;
-		});
-	std::sort(firePlayer.begin(), firePlayer.end(),
-		[](Fire const & a, Fire const & b) -> bool
-		{
-			return a.x < b.x;
-		});
-	std::sort(monsterShip.begin(), monsterShip.end(),
-		[](Monster const & a, Monster const & b) -> bool 
-		{ 
-			return a.x < b.x; 
-		});
-
 	CollisionFireMonster();
 	CollisionFireBoss();
 	CollisionFirePlayer();
