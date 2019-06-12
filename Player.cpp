@@ -10,6 +10,8 @@
 #include <chrono>
 #include <iostream>
 #include <random>
+#include <thread>   
+#include <ctime>
 #include <vector>
 
 Player Player::player;

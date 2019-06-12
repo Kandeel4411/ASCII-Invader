@@ -1,5 +1,7 @@
 #include "Menu.h"
 #include "Fire.h"
+#include "Monster.h"
+#include "Player.h"
 #include "Invader.h"
 #include <limits>
 
@@ -9,7 +11,7 @@ int main()
 	Invader game;
 
 	game.SetupLevel();
-	while (Invader::playing)
+	while (game.playing)
 	{
 		game.InputWindow();
 		game.Logic();
