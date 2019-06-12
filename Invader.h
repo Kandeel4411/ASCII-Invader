@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Monster.h"
+
 #include <array>
 #include <curses.h>
 #include <chrono>

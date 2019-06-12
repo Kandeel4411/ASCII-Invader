@@ -75,14 +75,29 @@ void Menu::TerminalColour()
 		Invader::playing = 0;
 	}
 }
+
+std::string ExePath() {
+	char buffer[MAX_PATH];
+	GetModuleFileName(NULL, buffer, MAX_PATH);
+	std::string::size_type pos = std::string(buffer).find_last_of("\\/");
+	return std::string(buffer).substr(0, pos);
+}
+
 void Menu::AudioNcolour()
 {
-	mciSendString("open \"C:\\\" type mpegvideo alias shooting_sound", NULL, 0, NULL);
-	mciSendString("open \"C:\\\" type mpegvideo alias intro1_sound", NULL, 0, NULL);
-	mciSendString("open \"C:\\\" type mpegvideo alias intro2_sound", NULL, 0, NULL);
-	mciSendString("open \"C:\\\" type mpegvideo alias b_death_sound", NULL, 0, NULL);
-	mciSendString("open \"C:\\\" type mpegvideo alias life_lost_sound", NULL, 0, NULL);
-	mciSendString("open \"C:\\\" type mpegvideo alias final_sound", NULL, 0, NULL);
+	std::string shooting_sound = ExePath()+"";
+	std::string intro1_sound = ExePath() + "";
+	std::string intro2_sound = ExePath() + "";
+	std::string b_death_sound = ExePath() + "";
+	std::string life_lost_sound = ExePath() + "";
+	std::string final_sound = ExePath() + "";
+
+	mciSendString(std::string("open \"" + shooting_sound +"\" type mpegvideo alias shooting_sound").c_str(), NULL, 0, NULL);
+	mciSendString(std::string("open \"" + intro1_sound + "\" type mpegvideo alias intro1_sound").c_str(), NULL, 0, NULL);
+	mciSendString(std::string("open \"" + intro2_sound + "\" type mpegvideo alias intro2_sound").c_str(), NULL, 0, NULL);
+	mciSendString(std::string("open \"" + b_death_sound + "\" type mpegvideo alias b_death_sound").c_str(), NULL, 0, NULL);
+	mciSendString(std::string("open \"" + life_lost_sound + "\" type mpegvideo alias life_lost_sound").c_str(), NULL, 0, NULL);
+	mciSendString(std::string("open \"" + final_sound + "\" type mpegvideo alias final_sound").c_str(), NULL, 0, NULL);
 
 	init_pair(C_MONSTER, COLOR_GREEN, COLOR_BLACK);
 	init_pair(C_MONSTER_FIRE, COLOR_GREEN, COLOR_BLACK);

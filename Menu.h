@@ -2,11 +2,7 @@
 
 #include <windows.h>
 #include <curses.h>
-#include <chrono>
-#include <iostream>
 #include <random>
-#include <thread>   
-#include <ctime>
 #include <vector>
 
 
