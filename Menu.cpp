@@ -12,6 +12,7 @@
 #include <thread>   
 #include <ctime>
 #include <vector>
+#include <string>
 #pragma comment(lib, "Winmm.lib")
 
 /////////
@@ -85,14 +86,18 @@ std::string ExePath() {
 
 void Menu::AudioNcolour()
 {
-	std::string shooting_sound = ExePath()+"";
-	std::string intro1_sound = ExePath() + "";
-	std::string intro2_sound = ExePath() + "";
-	std::string b_death_sound = ExePath() + "";
-	std::string life_lost_sound = ExePath() + "";
+	std::string enemy_shooting_sound = ExePath()+"\\assets\\shot.mp3";
+	std::string player_shooting_sound = ExePath() + "\\assets\\player.mp3";
+	std::string intro1_sound = ExePath() + "\\assets\\loop.mp3";
+	std::string intro2_sound = ExePath() + "\\assets\\loop.mp3";
+	std::string b_death_sound = ExePath() + "\\assets\\boss.mp3";
+	std::string enemy_death_sound = ExePath() + "\\assets\\enemy.mp3";
+	std::string life_lost_sound = ExePath() + "\\assets\\life.mp3";
 	std::string final_sound = ExePath() + "";
 
-	mciSendString(std::string("open \"" + shooting_sound +"\" type mpegvideo alias shooting_sound").c_str(), NULL, 0, NULL);
+	mciSendString(std::string("open \"" + enemy_death_sound + "\" type mpegvideo alias enemy_sound").c_str(), NULL, 0, NULL);
+	mciSendString(std::string("open \"" + player_shooting_sound + "\" type mpegvideo alias player_sound").c_str(), NULL, 0, NULL);
+	mciSendString(std::string("open \"" + enemy_shooting_sound +"\" type mpegvideo alias shooting_sound").c_str(), NULL, 0, NULL);
 	mciSendString(std::string("open \"" + intro1_sound + "\" type mpegvideo alias intro1_sound").c_str(), NULL, 0, NULL);
 	mciSendString(std::string("open \"" + intro2_sound + "\" type mpegvideo alias intro2_sound").c_str(), NULL, 0, NULL);
 	mciSendString(std::string("open \"" + b_death_sound + "\" type mpegvideo alias b_death_sound").c_str(), NULL, 0, NULL);

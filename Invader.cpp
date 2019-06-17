@@ -88,6 +88,8 @@ void Invader::InputWindow()
 		{
 		firePlayer.push_back(Fire(Player::player.x + 1,Player::player.y+1));
 		firePlayer.push_back(Fire(Player::player.x + 1, Player::player.y-1));
+		mciSendString("play player_sound from 0", NULL, 0, NULL);
+
 		}
 	}
 }
@@ -364,6 +366,8 @@ void Invader::CollisionFireMonster()
 					fireMonster.pop_back();
 					--i;
 					j = firePlayer.size();
+
+					mciSendString("play b_death_sound from 0", NULL, 0, NULL);
 					break;
 				}
 			}
@@ -420,6 +424,8 @@ void Invader::CollisionFirePlayer()
 					monsterShip[j] = monsterShip[monsterShip.size() - 1];
 					monsterShip.pop_back();
 					j = monsterShip.size();
+
+					mciSendString("play enemy_sound from 0", NULL, 0, NULL);
 					Menu::settingsLevel[setLevel].score += Menu::settingsLevel[setLevel].incScore;
 					break;
 				}
