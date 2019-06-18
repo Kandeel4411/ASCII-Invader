@@ -24,7 +24,7 @@ There are 5 levels in the game. After the 2nd level, a boss
 round should appear at the end of each level. (WARNING!) Boss bullets are undestroyable <br>
 
 * Demo:
-   ![Space Invader Demo](../assets/bandicam20190513224927716.gif)
+   ![Space Invader Demo](./assets/bandicam20190513224927716.gif)
 
 ## Installation ( Visual Studio 2017 )
 * Download the repository by clicking the green "Clone or download" button on the top-right of the repository's main page, then click on "Download ZIP".
