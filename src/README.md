@@ -1,6 +1,6 @@
 # Space-Invader
 My old incomplete version of the [Space Invader](https://en.wikipedia.org/wiki/Space_Invaders) game. <br>
-*Missing: Menus, sounds and usage rules.*
+*Missing: Menus.*
 ### OS
 Windows only.
 ### Dependencies
