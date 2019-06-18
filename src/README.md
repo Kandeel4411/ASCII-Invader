@@ -35,7 +35,7 @@ PDCurses
 ## Usage
 
 * How to run:
-   * Download and run the SpaceInvader.exe in the repo <br>
+   * Download and run the Invader.exe in the repo <br>
    *or*
    * Build and run Visual studio project by following the installation procedure
 
@@ -44,4 +44,4 @@ PDCurses
    * Tap `Space` to shoot
    * There is 5 levels in the game, each with certain number of invaders you need to kill. Boss rounds start above level 2
 * Demo:
-   ![Space Invader Demo](./assets/bandicam20190513224927716.gif)
+   ![Space Invader Demo](../assets/bandicam20190513224927716.gif)
