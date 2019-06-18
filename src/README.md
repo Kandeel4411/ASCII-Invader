@@ -1,6 +1,7 @@
 # Space-Invader
+*" Help us protect our galaxy by destroying those wicked coded invaders! "*<br>
 My old incomplete version of the [Space Invader](https://en.wikipedia.org/wiki/Space_Invaders) game. <br>
-*Missing: Menus.*
+**Missing: Menus.**
 ### OS
 * Windows.
 ### Dependencies
@@ -8,16 +9,26 @@ My old incomplete version of the [Space Invader](https://en.wikipedia.org/wiki/S
 ## Usage
 
 * How to run:
-   * Download and run the Invader.exe in the repo. <br>
+   * Download the repository by clicking the green "Clone or download" button on the top-right of the repository's main page, then click on "Download ZIP"
+   * Run Invader.exe <br>
    *or*
    * Build and run Visual studio project by following the installation procedure.
+
+* How to play:
+   - Press **A** or **D** to move left or right respectively  [ Only a tap should suffice ]
+   - Press **Space** to shoot
+   - Double tap **A** or **D** to move by a certain boost
+   - Press **X** to gain a life by sacrificing a certain amount of score
+
+There are 5 levels in the game. After the 2nd level, a boss
+round should appear at the end of each level. (WARNING!) Boss bullets are undestroyable <br>
 
 * Demo:
    ![Space Invader Demo](../assets/bandicam20190513224927716.gif)
 
 ## Installation ( Visual Studio 2017 )
 * Download the repository by clicking the green "Clone or download" button on the top-right of the repository's main page, then click on "Download ZIP".
-* Create new project in Visual Studio and extract the zipped file in it.
+* Create new project in Visual Studio and extract the zipped files in it.
 * Visual Studio 2017 [Source](https://stackoverflow.com/questions/42708392/install-pdcurses-on-visual-studio-2017?noredirect=1&lq=1)
     * Take the developer command prompt of VS2017 community edition and type in set `PDCURSES_SRCDIR=<PDCurses Directory Location>`; in my case it was
 
