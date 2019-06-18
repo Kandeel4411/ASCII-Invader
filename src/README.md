@@ -1,7 +1,7 @@
 # Space-Invader
 *" Help us protect our galaxy by destroying those wicked coded invaders! "*<br>
 My old incomplete version of the [Space Invader](https://en.wikipedia.org/wiki/Space_Invaders) game. <br>
-**Missing: Menus.**
+
 ### OS
 * Windows.
 ### Dependencies
