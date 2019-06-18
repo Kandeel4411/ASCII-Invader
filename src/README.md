@@ -2,9 +2,19 @@
 My old incomplete version of the [Space Invader](https://en.wikipedia.org/wiki/Space_Invaders) game. <br>
 *Missing: Menus.*
 ### OS
-Windows only.
+* Windows only.
 ### Dependencies
-PDCurses
+* PDCurses
+## Usage
+
+* How to run:
+   * Download and run the Invader.exe in the repo <br>
+   *or*
+   * Build and run Visual studio project by following the installation procedure
+
+* Demo:
+   ![Space Invader Demo](../assets/bandicam20190513224927716.gif)
+
 ## Installation ( Visual Studio 2017 )
 * Download the repository by clicking the green "Clone or download" button on the top-right of the repository's main page, then click on "Download ZIP"
 * Create new project in Visual Studio and extract the zipped file in it
@@ -32,16 +42,3 @@ PDCurses
       - Click on Apply, and OK.
 * Build and run project
 
-## Usage
-
-* How to run:
-   * Download and run the Invader.exe in the repo <br>
-   *or*
-   * Build and run Visual studio project by following the installation procedure
-
-* Rules:
-   * Tap `A` or `D` to move left or right or double tap to jump by a level-restrained boost 
-   * Tap `Space` to shoot
-   * There is 5 levels in the game, each with certain number of invaders you need to kill. Boss rounds start above level 2
-* Demo:
-   ![Space Invader Demo](../assets/bandicam20190513224927716.gif)
