@@ -52,4 +52,5 @@ round should appear at the end of each level. (WARNING!) Boss bullets are undest
         - In “Input” tab, add pdcurses.lib to Additional Dependencies (I initially got confused - remeber, it is the input tab of linker)
       - Click on Apply, and OK.
 * Build and run project.
+*Note: you might have to copy the assets folder to where your Visual Studio stores the compiled executable in order for the sounds to work* 
 
