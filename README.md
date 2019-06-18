@@ -21,10 +21,9 @@ My old incomplete version of the [Space Invader](https://en.wikipedia.org/wiki/S
    - Press **X** to gain a life by sacrificing a certain amount of score
 
 There are 5 levels in the game. After the 2nd level, a boss
-round should appear at the end of each level. (WARNING!) Boss bullets are undestroyable <br>
+round should appear at the end of each level. (WARNING!) Boss bullets are undestroyable
 
-* Demo:
-   ![Space Invader Demo](./assets/bandicam20190513224927716.gif)
+![Space Invader Demo](./assets/bandicam20190513224927716.gif)
 
 ## Installation ( Visual Studio 2017 )
 * Download the repository by clicking the green "Clone or download" button on the top-right of the repository's main page, then click on "Download ZIP".
