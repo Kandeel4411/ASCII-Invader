@@ -14,7 +14,7 @@
 #include <vector>
 #pragma comment(lib, "Winmm.lib")
 
-bool Invader::playing = 1;
+bool Invader::playing = true;
 int Invader::borderY;
 int Invader::setLevel = -1;
 Monster Invader::Boss;
