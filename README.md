@@ -1,8 +1,8 @@
 # Space-Invader
-*" Help us protect our galaxy by destroying those wicked coded invaders! "*<br>
-My old incomplete version of the [Space Invader](https://en.wikipedia.org/wiki/Space_Invaders) game. *Windows only*.
+*" Help us protect our galaxy by destroying those wicked invaders! "*<br>
+My old incomplete version of the [Space Invader](https://en.wikipedia.org/wiki/Space_Invaders) game.
 ### Dependencies
-* PDCurses.
+* PDCurses ( *Windows* ).
 ## Usage
 
 * How to run:
