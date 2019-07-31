@@ -21,7 +21,7 @@ public:
 	int y;
 
 	static void DrawPlayer(const std::vector<Fire>::iterator first, const std::vector<Fire>::iterator last);
-
+	static void DrawPlayerBullet(const std::vector<Fire>::iterator first, const std::vector<Fire>::iterator last);
 	static void DrawShip1();
 
 private:

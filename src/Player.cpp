@@ -22,24 +22,57 @@ void Player::DrawPlayer(const std::vector<Fire>::iterator first, const std::vect
 	DrawShip1();
 	attroff(COLOR_PAIR(C_PLAYER));
 
+	DrawPlayerBullet(first, last);
+}
+
+void Player::DrawPlayerBullet(const std::vector<Fire>::iterator first, const std::vector<Fire>::iterator last)
+{
 	attron(A_BOLD);
-	attron(COLOR_PAIR(C_PLAYER_FIRE));
+
+	// Set different bullets based on score
+	int score = Menu::settingsLevel[Invader::setLevel].score;
+	int bulletColor = -1;
+
+	if (score > 500)
+		bulletColor = RandInt(0, 3);
+	else
+		bulletColor = C_PLAYER_FIRE;
+
+	attron(COLOR_PAIR(bulletColor));
+
 	for (auto i = first; i < last; i++)
 	{
 		if (RandInt(0, 1) == 1)
 		{
+			if (score > 250)
+			{
+				mvaddch(i->x + 1, i->y, '|');
+				mvaddch(i->x, i->y, ACS_BLOCK);
+			}
+			else
+			{
+				mvaddch(i->x + 1, i->y, ' ');
+				mvaddch(i->x, i->y, '1');
+			}
 
-			mvaddch(i->x + 1, i->y, '|');
-			mvaddch(i->x, i->y, ACS_BLOCK);
 		}
 		else
 		{
-			mvaddch(i->x + 1, i->y, ' ');
-			mvaddch(i->x, i->y, ACS_DIAMOND);
+			if (score > 200)
+			{
+				mvaddch(i->x + 1, i->y, ' ');
+				mvaddch(i->x, i->y, ACS_DIAMOND);
+			}
+			else
+			{
+				mvaddch(i->x + 1, i->y, ' ');
+				mvaddch(i->x, i->y, '0');
+			}
 		}
 	}
+
 	attroff(A_BOLD);
-	attroff(COLOR_PAIR(C_PLAYER_FIRE));
+	attroff(bulletColor);
 }
 
 void Player::DrawShip1()

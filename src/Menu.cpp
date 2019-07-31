@@ -89,7 +89,7 @@ void Menu::AudioNcolour()
 	std::string enemy_shooting_sound = ExePath()+"\\assets\\shot.mp3";
 	std::string player_shooting_sound = ExePath() + "\\assets\\player.mp3";
 	std::string intro1_sound = ExePath() + "\\assets\\loop.mp3";
-	std::string intro2_sound = ExePath() + "\\assets\\loop.mp3";
+	std::string intro2_sound = ExePath() + "\\assets\\boss_loop.mp3";
 	std::string b_death_sound = ExePath() + "\\assets\\boss.mp3";
 	std::string enemy_death_sound = ExePath() + "\\assets\\enemy.mp3";
 	std::string life_lost_sound = ExePath() + "\\assets\\life.mp3";
