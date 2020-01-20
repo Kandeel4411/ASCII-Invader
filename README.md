@@ -40,7 +40,7 @@ round should appear at the end of each level. (WARNING!) Boss bullets are undest
     * Now we need to incorporate the generated library into our project. So open up your project and go to project properties
       - In “VC++ Directories”, change:
         - Include directories: Add a new file-path to PDCurses installation directory, in my case it is `C:\pdcurses-master`.
-        - Library directories: Add a new file-path to PDCurses installation library directory, in my case it is `C:\pdcurses-master\win32`.
+        - Library directories: Add a new file-path to PDCurses installation library directory, in my case it is `C:\pdcurses-master\wincon`.
 
       - In C/C++:
         - In “Code Generation” tab, change “Runtime Library” to “Multithreaded Debug (/MTd)”. (Usually, it is set already)
