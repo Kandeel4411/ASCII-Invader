@@ -22,7 +22,7 @@ round should appear at the end of each level. (WARNING!) Boss bullets are undest
 
 ![Space Invader Demo](./assets/bandicam20190513224927716.gif)
 
-## Dev Installation ( Visual Studio 2017 )
+## Dev Installation ( Visual Studio 2017-2019 )
 * Download the repository by clicking the green "Clone or download" button on the top-right of the repository's main page, then click on "Download ZIP".
 * Create new project in Visual Studio and extract the zipped files in it.
 * Visual Studio 2017 [Source](https://stackoverflow.com/questions/42708392/install-pdcurses-on-visual-studio-2017?noredirect=1&lq=1)
