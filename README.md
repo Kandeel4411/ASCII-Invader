@@ -1,17 +1,16 @@
 # Space-Invader
-*" Help us protect our galaxy by destroying those wicked invaders! "*<br>
+*" Protect our galaxy by destroying those alien invaders! "*  
 My own variation of the classic [Space Invader](https://en.wikipedia.org/wiki/Space_Invaders) game.
-### Dependencies
-* PDCurses ( *Windows* ).
-## Usage
 
-* How to run:
-   * Download the repository by clicking the green "Clone or download" button on the top-right of the repository's main page, then click on "Download ZIP"
-   * Run Invader.exe <br>
-   *or*
-   * Build and run Visual studio project by following the installation procedure.
+### Dependencies
+* Windows
+* PDCurses
+
+## Running
+You can download the latest release from [here](https://github.com/Kandeel4411/Space-Invader/releases) 
 
 * How to play:
+   - Run `invader.exe`
    - Press **A** or **D** to move left or right respectively  [ Only a tap should suffice ]
    - Press **Space** to shoot
    - Double tap **A** or **D** to move by a certain boost
@@ -22,9 +21,8 @@ round should appear at the end of each level. (WARNING!) Boss bullets are undest
 
 ![Space Invader Demo](./assets/bandicam20190513224927716.gif)
 
-## Dev Installation ( Visual Studio 2017-2019 )
-* Download the repository by clicking the green "Clone or download" button on the top-right of the repository's main page, then click on "Download ZIP".
-* Create new project in Visual Studio and extract the zipped files in it.
+## Building from source ( Visual Studio 2017 - 2019 )
+* Clone the repo and create new project in Visual Studio
 * Visual Studio 2017 [Source](https://stackoverflow.com/questions/42708392/install-pdcurses-on-visual-studio-2017?noredirect=1&lq=1)
     * Take the developer command prompt of VS2017 community edition and type in set `PDCURSES_SRCDIR=<PDCurses Directory Location>`; in my case it was
 
@@ -47,6 +45,6 @@ round should appear at the end of each level. (WARNING!) Boss bullets are undest
       - In Linker:
         - In “Input” tab, add pdcurses.lib to Additional Dependencies (I initially got confused - remeber, it is the input tab of linker)
       - Click on Apply, and OK.
-* Build and run project.<br>
+* Build and run project.
 *Note: you might have to copy the assets folder to where your Visual Studio stores the compiled executable in order for the sounds to work* 
 
