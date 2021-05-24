@@ -21,7 +21,7 @@ round should appear at the end of each level. (WARNING!) Boss bullets are undest
 
 ![Space Invader Demo](./assets/bandicam20190513224927716.gif)
 
-## Building from source ( Visual Studio 2017 )
+## Building from source ( Visual Studio 2017 - 2019 )
 * Clone the repo and create new project in Visual Studio
 * Visual Studio 2017 [Source](https://stackoverflow.com/questions/42708392/install-pdcurses-on-visual-studio-2017?noredirect=1&lq=1)
     * Take the developer command prompt of VS2017 community edition and type in set `PDCURSES_SRCDIR=<PDCurses Directory Location>`; in my case it was
@@ -38,7 +38,7 @@ round should appear at the end of each level. (WARNING!) Boss bullets are undest
     * Now we need to incorporate the generated library into our project. So open up your project and go to project properties
       - In “VC++ Directories”, change:
         - Include directories: Add a new file-path to PDCurses installation directory, in my case it is `C:\pdcurses-master`.
-        - Library directories: Add a new file-path to PDCurses installation library directory, in my case it is `C:\pdcurses-master\win32`.
+        - Library directories: Add a new file-path to PDCurses installation library directory, in my case it is `C:\pdcurses-master\wincon`.
 
       - In C/C++:
         - In “Code Generation” tab, change “Runtime Library” to “Multithreaded Debug (/MTd)”. (Usually, it is set already)
