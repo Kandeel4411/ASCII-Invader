@@ -22,7 +22,7 @@ round should appear at the end of each level. (WARNING!) Boss bullets are undest
 
 
 ## Building from source ( Visual Studio 2017 - 2019 )
----
+
 ### Dependencies
 * PDCurses
 
