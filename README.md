@@ -2,7 +2,7 @@
 *" Protect our galaxy by destroying those alien invaders! "*  
 My own variation of the classic [Space Invader](https://en.wikipedia.org/wiki/Space_Invaders) game.
 
-![ASCII Invader Demo](./assets/bandicam20190513224927716.gif)
+![ASCII Invader Demo](./assets/WindowsTerminal_9u325OvwDB.gif)
 
 ## Platform
 * Windows
