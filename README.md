@@ -1,13 +1,15 @@
-# Space-Invader
+# ASCII-Invader
 *" Protect our galaxy by destroying those alien invaders! "*  
 My own variation of the classic [Space Invader](https://en.wikipedia.org/wiki/Space_Invaders) game.
+
+![ASCII Invader Demo](./assets/bandicam20190513224927716.gif)
 
 ### Dependencies
 * Windows
 * PDCurses
 
 ## Running
-You can download the latest release from [here](https://github.com/Kandeel4411/Space-Invader/releases) 
+You can download the latest release from [here](https://github.com/Kandeel4411/ASCII-Invader/releases) 
 
 * How to play:
    - Run `invader.exe`
@@ -19,7 +21,6 @@ You can download the latest release from [here](https://github.com/Kandeel4411/S
 There are 5 levels in the game. After the 2nd level, a boss
 round should appear at the end of each level. (WARNING!) Boss bullets are undestroyable
 
-![Space Invader Demo](./assets/bandicam20190513224927716.gif)
 
 ## Building from source ( Visual Studio 2017 - 2019 )
 * Clone the repo and create new project in Visual Studio
