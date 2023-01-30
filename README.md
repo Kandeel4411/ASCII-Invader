@@ -4,9 +4,8 @@ My own variation of the classic [Space Invader](https://en.wikipedia.org/wiki/Sp
 
 ![ASCII Invader Demo](./assets/bandicam20190513224927716.gif)
 
-### Dependencies
+## Platform
 * Windows
-* PDCurses
 
 ## Running
 You can download the latest release from [here](https://github.com/Kandeel4411/ASCII-Invader/releases) 
@@ -23,6 +22,11 @@ round should appear at the end of each level. (WARNING!) Boss bullets are undest
 
 
 ## Building from source ( Visual Studio 2017 - 2019 )
+---
+### Dependencies
+* PDCurses
+
+### Building
 * Clone the repo and create new project in Visual Studio
 * Visual Studio 2017 [Source](https://stackoverflow.com/questions/42708392/install-pdcurses-on-visual-studio-2017?noredirect=1&lq=1)
     * Take the developer command prompt of VS2017 community edition and type in set `PDCURSES_SRCDIR=<PDCurses Directory Location>`; in my case it was
